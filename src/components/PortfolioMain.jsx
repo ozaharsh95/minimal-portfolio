@@ -3,7 +3,6 @@ export default function PortfolioMain() {
     <div className="newspaper-page">
       <header className="masthead">
         <div className="masthead-title">
-          <span className="masthead-tagline">The Developer Chronicle</span>
           <h1>Harsh Oza</h1>
           <h2>Full Stack Developer</h2>
         </div>
@@ -30,27 +29,16 @@ export default function PortfolioMain() {
 
         <section className="side-column">
           <article className="sidebar-block">
-            <h3 className="section-heading">TECH STACK</h3>
+            <h3 className="section-heading">TECH STACK & TOOLS</h3>
             <ul className="stack-list">
               <li>
-
                 <span className="stack-value">ReactJS, NextJS, TypeScript</span>
               </li>
               <li>
-
                 <span className="stack-value">Node.js, ExpressJS</span>
               </li>
               <li>
-
-                <span className="stack-value">
-                  REST APIs, modular architecture, clean code
-                </span>
-              </li>
-              <li>
-
-                <span className="stack-value">
-                  Git, CI/CD, testing, modern build tools
-                </span>
+                <span className="stack-value">Git, GitHub, VS code</span>
               </li>
             </ul>
           </article>
@@ -58,7 +46,7 @@ export default function PortfolioMain() {
           <article className="sidebar-block">
             <h3 className="section-heading">CONTACT</h3>
             <p className="contact-line">
-              <span className="contact-label">Portfolio</span>
+              <span className="contact-label">GitHub</span>
               <span className="contact-value">
                 <a
                   href="https://github.com/ozaharsh95"
@@ -74,10 +62,10 @@ export default function PortfolioMain() {
               <span className="contact-label">Email</span>
               <span className="contact-value">
                 <a
-                  href="mailto:harshoza77@gmail.com"
+                  href="mailto:harsh.oza.work@gmail.com"
                   className="link-underline"
                 >
-                  harshoza77@gmail.com
+                  harsh.oza.work@gmail.com
                 </a>
               </span>
             </p>
@@ -142,8 +130,6 @@ export default function PortfolioMain() {
               </ul>
             </div>
           </article>
-
-
         </section>
 
         <section className="timeline">
@@ -158,11 +144,10 @@ export default function PortfolioMain() {
         </section>
       </main>
 
-
       <footer className="footer-strip">
         <span>Harsh Oza &mdash; Full Stack Developer</span>
         <span>ReactJS • NextJS • TypeScript • ExpressJS</span>
       </footer>
     </div>
-  )
+  );
 }
