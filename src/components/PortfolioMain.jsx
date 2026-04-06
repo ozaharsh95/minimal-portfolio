@@ -45,19 +45,7 @@ export default function PortfolioMain() {
 
           <article className="sidebar-block">
             <h3 className="section-heading">CONTACT</h3>
-            <p className="contact-line">
-              <span className="contact-label">GitHub</span>
-              <span className="contact-value">
-                <a
-                  href="https://github.com/ozaharsh95"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="link-underline"
-                >
-                  github.com/ozaharsh95
-                </a>
-              </span>
-            </p>
+
             <p className="contact-line">
               <span className="contact-label">Email</span>
               <span className="contact-value">
@@ -66,6 +54,19 @@ export default function PortfolioMain() {
                   className="link-underline"
                 >
                   harsh.oza.work@gmail.com
+                </a>
+              </span>
+            </p>
+            <p className="contact-line">
+              <span className="contact-label">Twitter</span>
+              <span className="contact-value">
+                <a
+                  href="https://x.com/ozaharsh95"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link-underline"
+                >
+                  x.com/ozaharsh95
                 </a>
               </span>
             </p>
@@ -79,6 +80,19 @@ export default function PortfolioMain() {
                   className="link-underline"
                 >
                   linkedin.com/in/harshoza955
+                </a>
+              </span>
+            </p>
+            <p className="contact-line">
+              <span className="contact-label">GitHub</span>
+              <span className="contact-value">
+                <a
+                  href="https://github.com/ozaharsh95"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link-underline"
+                >
+                  github.com/ozaharsh95
                 </a>
               </span>
             </p>
