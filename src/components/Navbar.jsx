@@ -1,12 +1,18 @@
-import { useState, useEffect } from 'react';
-import { SparklesIcon, CodeIcon, ClockIcon, MailIcon, GithubIcon } from './Icons';
+import { useState, useEffect } from "react";
+import {
+  SparklesIcon,
+  CodeIcon,
+  ClockIcon,
+  MailIcon,
+  GithubIcon,
+} from "./Icons";
 
 export default function Navbar() {
-  const [activeSection, setActiveSection] = useState('about');
+  const [activeSection, setActiveSection] = useState("about");
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'skills', 'projects', 'timeline', 'contact'];
+      const sections = ["about", "skills", "projects", "timeline", "contact"];
       const scrollPosition = window.scrollY + 120; // offset for sticky nav
 
       for (const section of sections) {
@@ -22,8 +28,8 @@ export default function Navbar() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (id) => {
@@ -37,7 +43,7 @@ export default function Navbar() {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
       setActiveSection(id);
     }
@@ -45,43 +51,53 @@ export default function Navbar() {
 
   return (
     <nav className="bento-navbar">
-      <div className="nav-logo" onClick={() => scrollToSection('about')}>
+      <div className="nav-logo" onClick={() => scrollToSection("about")}>
         <span className="logo-accent">H</span>O
       </div>
       <div className="nav-links">
-        <button 
-          className={`nav-item ${activeSection === 'about' ? 'active' : ''}`}
-          onClick={() => scrollToSection('about')}
+        <button
+          className={`nav-item ${activeSection === "about" ? "active" : ""}`}
+          onClick={() => scrollToSection("about")}
         >
-          <span className="nav-icon-wrapper"><SparklesIcon /></span>
-          <span className="nav-text">About</span>
+          <span className="nav-icon-wrapper">
+            <SparklesIcon />
+          </span>
+          <span className="nav-text">
+            About
+          </span>
         </button>
-        <button 
-          className={`nav-item ${activeSection === 'skills' ? 'active' : ''}`}
-          onClick={() => scrollToSection('skills')}
+        <button
+          className={`nav-item ${activeSection === "skills" ? "active" : ""}`}
+          onClick={() => scrollToSection("skills")}
         >
-          <span className="nav-icon-wrapper"><CodeIcon /></span>
+          <span className="nav-icon-wrapper">
+            <CodeIcon />
+          </span>
           <span className="nav-text">Skills</span>
         </button>
-        <button 
-          className={`nav-item ${activeSection === 'projects' ? 'active' : ''}`}
-          onClick={() => scrollToSection('projects')}
+        <button
+          className={`nav-item ${activeSection === "projects" ? "active" : ""}`}
+          onClick={() => scrollToSection("projects")}
         >
           <span className="nav-icon-wrapper">🚀</span>
           <span className="nav-text">Projects</span>
         </button>
-        <button 
-          className={`nav-item ${activeSection === 'timeline' ? 'active' : ''}`}
-          onClick={() => scrollToSection('timeline')}
+        <button
+          className={`nav-item ${activeSection === "timeline" ? "active" : ""}`}
+          onClick={() => scrollToSection("timeline")}
         >
-          <span className="nav-icon-wrapper"><ClockIcon /></span>
+          <span className="nav-icon-wrapper">
+            <ClockIcon />
+          </span>
           <span className="nav-text">Experience</span>
         </button>
-        <button 
-          className={`nav-item ${activeSection === 'contact' ? 'active' : ''}`}
-          onClick={() => scrollToSection('contact')}
+        <button
+          className={`nav-item ${activeSection === "contact" ? "active" : ""}`}
+          onClick={() => scrollToSection("contact")}
         >
-          <span className="nav-icon-wrapper"><MailIcon /></span>
+          <span className="nav-icon-wrapper">
+            <MailIcon />
+          </span>
           <span className="nav-text">Contact</span>
         </button>
       </div>
